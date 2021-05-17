@@ -3,7 +3,6 @@
 include_once "app/Patient.php";
 include_once "app/QueuePriority.php";
 
-
 $queue = new QueuePriority();
 $queueTest = $queue->enqueue(new Patient(5, "Smith"));
 $queueTest = $queue->enqueue(new Patient(4, "Jones"));
@@ -11,11 +10,6 @@ $queueTest = $queue->enqueue(new Patient(6, "Fehrenbach"));
 $queueTest = $queue->enqueue(new Patient(1, "Brown"));
 $queueTest = $queue->enqueue(new Patient(1, "Ingram"));
 $queueTest = $queue->enqueue(new Patient(4, "vit"));
-
-
-//echo "<pre>";
-//var_dump($queueTest);
-//echo "</pre>";
 
 ?>
 <!doctype html>

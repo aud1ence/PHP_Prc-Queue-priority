@@ -28,20 +28,12 @@ class QueuePriority
 
     public function dequeue()
     {
-//       return $getPriority = array_shift($this->patients);
         array_shift($this->patients);
-//        var_dump($this->patients);
         return key($this->patients);
-
     }
 
     public function count(): int
     {
         return count($this->patients);
-    }
-
-    public function __toString(): string
-    {
-        return $this->count();
     }
 }
